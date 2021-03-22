@@ -1,0 +1,16 @@
+Differences Between BrowserJS and NodeJS
+
+
+1.JavaScript is a programming language. JS can run in any browser with a JavaScript Engine. Node JS is an interpreter or running environment for a JavaScript programming language.
+
+2.Browser JS is used for client-side. NodeJS is a server-side application.
+
+3.The process of interpreting JavaScript to machine level completely happens inside the browser. The JavaScript code gets executed outside the browser as it is an interpreter and NodeJS is an environment to run the JavaScript.
+
+4.BrowserJS is SandBoxed which has limited access and Browser Sandbox safeguards from any kind of malicious attacks. NodeJS has complete access to the system. This includes read and write directly from the system files.
+
+5.“window” is a predefined global object which has to deal with window that has been drawn. Node doesn’t have a predefined “window” object because it doesn’t have a window to draw.
+
+6.BrowserJS processes response objects. NodeJS processes request object.
+
+7.BrowserJS can run in any engine like Spider monkey (Firefox), JavaScript Core (Safari), V8 (Google Chrome). Node JS only runs in a V8 engine which mainly used by google chrome and the JS code written under Node JS runs in V8 Engine.

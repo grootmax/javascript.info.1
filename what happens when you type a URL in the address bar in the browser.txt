@@ -1,0 +1,28 @@
+What happens when you type a URL in the address bar of the browser?
+1. You enter a URL in a web browser
+2. The browser looks up the IP address for the domain name via DNS
+3. Browser checks cache for DNS entry to find the corresponding IP address of website. It looks for following cache. If not found in one, then continues checking to the next until found. From the Browser, Operating Systems, Router and ISP Cache’s. If not found in cache, ISP’s (Internet Service Provider) DNS server initiates a DNS query to find IP address of server that hosts the domain name.
+4. Once the browser gets the physical address of the server, the browser initiates the TCP connection (connection with the server using synchronize (SYN) and acknowledge (ACK) messages)
+5. The browser sends a HTTP request to the server. The HTTP request will be sent using the port 80 as default or port 443 if HTTPS.
+6. The server sends back a HTTP response.
+7. The browser begins rendering the HTML
+· HTML is parsed to begin construction of the DOM tree.
+· Construction of the render tree begins from using the DOM and CSSOM trees.
+· The layout process begins based upon the blueprint constructed in the previous step.
+· This is responsible for placing the elements in their respective positions.
+· The painting process will begin and takes care of displaying the elements according to their structure.
+8. The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3–5. Each subsequent request completes a request/response cycle and is rendered in turn by the browser.
+9. Once the page is loaded, the browser sends further asynchronous requests as needed.
+
+Used Terminologies
+DNS — Domain Name System: In very simple terms, it translates domain names like www.example.com to a number like 93.184.216.34 that corresponds with a computer on the internet somewhere.
+CACHE — A holding area in computer memory where often- or most-recently used things are quickly available.
+TCP — Transmission Control Protocol. This is the protocol that the Internet uses to transport data packets from one computer to another.
+HTTP — Hypertext Transfer Protocol is the way data gets sent and received in the World Wide Web, where hypertext documents include links to other resources that you can easily access with a click.
+SYN/ACK — How two computers on the internet start talking to each other using TCP.
+HTML — Hyper Text Markup Language, how webpages are being painted on the screen of your browser.
+CSS — Cascading Style Sheets describe how the webpage you just pulled up should look like.
+JS — JavaScript, a programming language that helps build the webpage on your browser screen.
+Tokenizer — a tokenizer helps building your webpage by recognizing incoming data by looking for whitespace like tabs, spaces, and new lines.
+DOM Tree and CSSOM Tree — You may know that HTML is actually a bunch of text tags like <head> or <body>. To paint a webpage, these tags are organized in trees so that they can easily be painted on the screen, which is called rendering.
+Asynchronous Requests — An asynchronous request is a request that doesn’t block the client which means the client does not have to wait until the current request is completed. whereas a synchronous request blocks the client until the current operation is completed.
